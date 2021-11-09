@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div style="min-width: 180px;">
+            <div style="padding: 0px 4px;">
+                <div style="text-align: center; font-size: 1.125rem;"><strong id="roomTitle">直播助手设置</strong></div>
+                <img id="roomThumb" style="max-width: 350px; margin-top: 3px; display: none;"/>
+            </div>
+            <hr/>
+            <div>
+                <input id="ytNotice" type="checkbox"/><label>67373(YouTube)开播提醒</label><br>
+                <input id="ttvNotice" type="checkbox"/><label>418094(Twitch)开播提醒</label><br>
+                <hr/>
+                <div style="text-align: center; font-size: 14px; margin-bottom: 2px;"><strong>斗鱼直播间设置</strong></div>
+                <input id="autoPick" type="checkbox"/><label>自动拾取宝箱（<span id="pickNum"></span>）</label><br>
+                <input id="blockIdleBlack" type="checkbox"/><label>防止空闲黑屏</label><br>
+                <input id="blockJump" type="checkbox"/><label>阻止关播自动跳转</label><br>
+                <input id="danmuUN" type="checkbox"/><label>视频弹幕显示用户名</label><br>
+                <!--<input id="autoRefresh" type="checkbox"/><label>开播自动刷新视频</label><br>-->
+                <!--<input id="videoDanmuOff" type="checkbox"/><label>黑屏时关闭视频弹幕</label><br>-->
+                <input id="blockEnter" type="checkbox"/><label>屏蔽进场信息</label><br>
+                <input id="blockMsg" type="checkbox"/><label>屏蔽送礼消息</label><br>
+                <input id="blockLike" type="checkbox"/><label>屏蔽点赞消息</label><br>
+                <input id="simplifyDanmu" type="checkbox"/><label>右侧弹幕精简</label><br>
+                <input id="removeDanmuColor" type="checkbox"/><label>右侧弹幕颜色去除</label><br>
+                <input id="blockScollLock" type="checkbox"/><label>阻止滚动条触发锁屏</label><br>
+                <input id="effectOpacity" type="checkbox"/><label>右侧礼物进场特效透明化</label><br>
+                <input id="recordNobleDanmu" type="checkbox"/><label>记录贵族弹幕</label><br>
+                <input id="recordAdminDanmu" type="checkbox"/><label>记录主播房管弹幕</label><br>
+                <div style="margin-top: 5px; margin-left: 3px;">
+                    <label>弹幕记录等级：</label>
+                    <input id="recordDanmuLevel" type="number" min="0" max="120" step="1"/>
+                </div>
+            </div>
+            <hr/>
+            <div style="display: flex; justify-content: space-between; background: url('../images/xrcjb.png') no-repeat center;">
+                <span data-start="2014.09.11">v2.41</span><span data-xrcjb="2017.12.10">&copy;67373</span>
+            </div>
+        </div>        
+        <script src="../js/lib/jquery.min.js"></script>
+        <script src="popup.js"></script>
+    </body>    
+</html>

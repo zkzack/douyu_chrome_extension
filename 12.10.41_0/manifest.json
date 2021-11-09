@@ -1,0 +1,41 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon19.png",
+         "38": "images/icon38.png"
+      },
+      "default_popup": "popup/popup.html",
+      "default_title": "67373直播助手"
+   },
+   "content_scripts": [ {
+      "css": [ "css/color.css", "css/record.css", "css/danmu.css" ],
+      "exclude_globs": [ "http?://www.douyu.com/", "http?://www.douyu.com/room/*", "http?://www.douyu.com/member/*", "http?://www.douyu.com/directory/*", "http?://www.douyu.com/cms/*" ],
+      "js": [ "js/lib/jquery.min.js", "js/common/utility.js", "js/common/recvMsg.js", "js/douyu/elements.js", "js/douyu/main.js" ],
+      "matches": [ "https://www.douyu.com/*" ]
+   }, {
+      "css": [ "css/color.css", "css/component.css", "css/button.css", "css/modal.css", "css/lottery.css" ],
+      "js": [ "js/common/utility.js", "js/common/recvMsg.js", "js/common/modal.js", "js/common/lottery.js", "js/youtube/defaultRates.js", "js/youtube/chatMonitor.js", "js/youtube/ready.js", "js/youtube/main.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+   }, {
+      "css": [ "css/color.css", "css/component.css", "css/button.css", "css/drawer.css", "css/modal.css", "css/rating.css", "css/lottery.css" ],
+      "js": [ "js/common/utility.js", "js/common/recvMsg.js", "js/common/modal.js", "js/common/rating.js", "js/common/lottery.js", "js/common/drawer.js", "js/twitch/noticeRecorder.js", "js/twitch/chatRoomMonitor.js", "js/twitch/main.js" ],
+      "matches": [ "https://www.twitch.tv/*" ]
+   } ],
+   "description": "为斗鱼直播间提供多项功能；将油管直播的SuperChat自动换算成CNY并提供67373直播间开播提醒功能；为Twitch直播提供打分、抽奖及礼物记录功能，提供thebs_chen直播间开播提醒功能",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtcXmGZLQg8g1BYDc0vwfgoCCtdG+wQ0iqLwqWMhgPqDZap6b726628xNxLRvlwF69G/WoaryHZ+sfpdrIxM00QcOjPJwDadr68DJ7AIborGqbCskb8r51DWsQIajrfnT276IEyNZSgfswxHxxB/UjBlhw0qa04HqxCELVlnkkw5uia3M+/loLu1qe1GVhSSZ5Lhbj/JKb80FucKnYldclkunC6TSwaThV5QejU1xdWYeKBacpvFTd7bIaQSyh5pnowYV1Vl9SqNHxEb92qvaU5xC4hXay7jsH78TFDuvn9m5Agy3F+ZTvv9DmK0w6D+uZllVL4hGW8EPn7rUZjVISQIDAQAB",
+   "manifest_version": 2,
+   "name": "67373斗鱼&油管&Twitch直播助手",
+   "permissions": [ "storage", "tabs", "notifications", "http://open.douyucdn.cn/", "https://cdn.jsdelivr.net/", "https://api.jsonstorage.net/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "12.10.41",
+   "web_accessible_resources": [ "js/lib/*.js", "js/common/*.js", "js/douyu/modules/*.js", "js/twitch/inject/*.js", "images/*.png" ]
+}

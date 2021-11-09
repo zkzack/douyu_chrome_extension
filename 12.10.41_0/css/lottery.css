@@ -1,0 +1,57 @@
+.lottery-67373-container {
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    height: 177px;
+    overflow: hidden;
+    position: relative;
+}
+
+.lottery-67373-border {
+    position: absolute;
+    border-style: outset;
+}
+.lottery-67373-border.top,.lottery-67373-border.bottom {
+    width: 100%;
+}
+.lottery-67373-border.top {
+    top: 68px;
+    border-width: 4px 0 0 0;
+    border-image: linear-gradient(to right,gold,darkorange) 4;
+}
+.lottery-67373-border.bottom {
+    top: 105px;
+    border-width: 0 0 4px 0;
+    border-image: linear-gradient(to left,gold,darkorange) 4;
+}
+.lottery-67373-border.right,.lottery-67373-border.left {
+    top: 72px;
+    height: 33px;
+}
+.lottery-67373-border.right {
+    border-width: 0 4px 0 0;
+    border-image: linear-gradient(to bottom,gold,darkorange) 4;
+}
+.lottery-67373-border.left {
+    right: 0px;
+    border-width: 0 0 0 4px;
+    border-image: linear-gradient(to top,gold,darkorange) 4;
+}
+
+.lottery-67373-animation {
+    margin-top: 72px;
+    font-family: 'Inconsolata';
+    list-style-type: none;
+    font-size: 16px;
+    color: rgba(255,255,255,.7);
+    text-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+.lottery-67373-animation > li {
+    height: 24px;
+}
+.lottery-67373-animation > li.lottery-67373-winner {
+    height: 33px;
+}
+.lottery-67373-winner {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}

@@ -1,0 +1,137 @@
+.white-67373 {
+    color: #e0e0e0;
+}
+.silver-67373 {
+    color: #c0c0c0;
+}
+.brown-67373 {
+    color: #DEB887;
+}
+.yellow-67373 {
+    color: #ffd700;
+}
+.red-67373 {
+    color: #FF2500;
+}
+.orange-67373 {
+    color: #FFA500;
+}
+.green-67373 {
+    color: #86e495;
+}
+.blue-67373 {
+    color: #00cfff;
+}
+.violet-67373 {
+    color: #ff82ff;
+}
+.pink-67373 {
+    color: #FF8080;
+}
+.magenta-67373 {
+    color: #ff69b4;
+}
+.beige-67373 {
+    color: #F5F5DC;
+}
+
+.border-bottom-pink {
+    border-bottom: 1px solid #FF8080;
+}
+.border-bottom-red {
+    border-bottom: 1px solid #FF2500;
+}
+.border-bottom-yellow {
+    border-bottom: 1px solid #ffd700;
+}
+
+.dy-noble-0 {
+    color: rgb(140, 165, 192);
+}
+.dy-noble-1 {
+    color: rgb(196, 159, 109);
+}
+.dy-noble-2 {
+    color: rgb(188, 88, 8);
+}
+.dy-noble-3 {
+    color: rgb(92, 150, 238);
+}
+.dy-noble-4 {
+    color: rgb(182, 63, 217);
+}
+.dy-noble-5 {
+    color: rgb(232 , 22, 40);
+}
+.dy-noble-6 {
+    color: rgb(255, 114,0);
+}
+.dy-noble-7 {
+    color: rgb(140, 165, 192);
+}
+.dy-noble-8 {
+    color: rgb(238, 196, 84);
+}
+.dy-noble-9 {
+    color: rgb(238, 196, 84);
+}
+
+.bg-noble-3 {
+    background-color: rgba(27, 83, 147, .7);
+}
+.bg-noble-4 {
+    background-color: rgba(79, 37, 136, .7);
+}
+.bg-noble-5 {
+    background-color: rgba(125, 29, 15, .7);
+}
+.bg-noble-6 {
+    background-color: rgba(204, 81, 0, .7);
+}
+.bg-noble-7 {
+    background-color: rgba(238, 196, 84, .5);
+}
+.bg-noble-8 {
+    background-color: rgba(238, 196, 84, .5);
+}
+
+.dy-level-1 {
+    color: rgb(236,191,131);
+}
+.dy-level-15 {
+    color: rgb(143,230,158);
+}
+.dy-level-30 {
+    color: rgb(105,215,248);
+}
+.dy-level-40 {
+    color: rgb(92,150,238);
+}
+.dy-level-50 {
+    color: rgb(132,123,253);
+}
+.dy-level-60 {
+    color: rgb(160,100,250);
+}
+.dy-level-70 {
+    color: rgb(182,63,217);
+}
+.dy-level-80 {
+    color: rgb(245,41,142);
+}
+.dy-level-90 {
+    color: rgb(232,22,40);
+}
+.dy-level-100 {
+    color: rgb(255,32,9);
+}
+.dy-level-110 {
+    color: rgb(255,114,0);
+}
+.dy-level-120 {
+    color: rgb(255,204,2);
+}
+
+.ttv-67373-purple {
+    color:#9147ff;
+}

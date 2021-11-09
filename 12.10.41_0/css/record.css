@@ -1,0 +1,108 @@
+.record-67373 {
+    position: absolute;
+    display: flex;
+	height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(119,119,119,.8) transparent;
+    /*font-size: 1.5rem;
+    color: #ffd700;*/
+}
+
+    /*展开内容*/
+    .record-67373 > .tab-67373 {
+        display: none;
+        flex-direction: column;
+        background: rgba(44,44,44,.8);
+        overflow-y: scroll;
+        overflow-x: auto;
+        /*white-space: pre-line;*/
+        word-break: break-all;
+        height: 100%;
+        width: 22vw;
+    }    
+    .record-67373 > .tab-67373.open {
+        display: flex;
+    }
+
+    /*展开按钮*/
+    .record-67373 > .record-67373-open-btn {
+        height: 100%;
+        width: 15px;
+        display: flex;
+        align-items: center;
+    }
+        .record-67373 > .record-67373-open-btn > button {
+            height: 150px;
+            width: 100%;
+            background-position: 15px -151px;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .record-67373 > .record-67373-open-btn > button:hover {
+            opacity: .8;
+        }
+        .record-67373 > .tab-67373.open + .record-67373-open-btn > button {
+            opacity: .8;
+            background-position: 0px 0px;
+        }
+        .record-67373 > .tab-67373.open + .record-67373-open-btn > button:hover {            
+            background-position: 15px 0px;
+        }
+
+    /*tab按钮*/
+    .tab-67373 > .tab-67373-link {
+        display: flex;
+        border-bottom: 2px outset #FFA500;
+    }
+        .tab-67373 > .tab-67373-link > button {
+            width: 6vw;
+            padding: 0.125rem 0;
+            cursor: pointer;
+            color: #777;
+            font-size: 1.5rem;
+        }
+        .tab-67373 > .tab-67373-link > button:hover {
+            background: rgba(200,200,200,.7);  
+        }
+        .tab-67373 > .tab-67373-link > button.active,
+        .tab-67373 > .tab-67373-link > button.active:hover,
+        .tab-67373 > .tab-67373-link > button.active:focus { 
+            color: #FFA500;
+            cursor: default;                
+            border: 2px outset #FFA500;
+            border-bottom-color: transparent;
+        }
+
+    /*tab内容*/
+    .tab-67373 > .tab-67373-main {
+        display: flex;
+    }       
+        .tab-67373-main > .tab-67373-content {
+            display: none;
+            font-size: 1.25rem;
+        }
+        .tab-67373-main > .tab-67373-content.active {
+            display: block;
+        }
+            .tab-67373-main > .tab-67373-content span {
+                font-size: 1.5rem;
+                text-shadow: 1px 0px #000, -1px 0px #000, 0px 1px #000, 0px -1px #000;
+            }
+
+    /*自定义滚动条*/
+    .record-67373 ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    .record-67373 ::-webkit-scrollbar-track {      
+        background: transparent;  
+    }  
+    .record-67373 ::-webkit-scrollbar-thumb {
+        background: rgba(119,119,119,.8);
+    }
+    .record-67373 ::-webkit-scrollbar-thumb:hover {
+        background: rgb(136,136,136);
+    }
+    .record-67373 ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
